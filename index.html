@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dragones de Cartón · SOFA 2026</title>
+  <meta name="description" content="Recorre la feria, gana sellos de dragón en los negocios participantes y entra al sorteo diario de premios.">
+  <meta property="og:title" content="Dragones de Cartón · SOFA 2026">
+  <meta property="og:description" content="Recorre la feria, gana sellos de dragón y entra al sorteo diario de premios.">
+  <meta property="og:image" content="https://dragonesdecarton.netlify.app/assets/img/og.jpg">
+  <meta property="og:url" content="https://dragonesdecarton.netlify.app/">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#1a1411">
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@600;800&family=Instrument+Sans:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="topbar">
+    <div class="wrap topbar__in">
+      <a class="brand" href="index.html">Dragones de Cartón</a>
+      <nav class="nav" aria-label="Principal">
+        <a href="#como">Cómo jugar</a>
+        <a href="#participantes">Participantes</a>
+        <a href="#sorteo">Sorteo</a>
+        <a href="aliados.html" class="nav__aliados">Aliados</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero">
+      <div class="wrap hero__in">
+        <div class="hero__text">
+          <p class="eyebrow"><span data-dc="evento.feria"></span> · <span data-dc="evento.fechas"></span></p>
+          <h1>Dragones<br>de Cartón</h1>
+          <p class="lede">Pide tu cartón en cualquier negocio participante, gana sellos de dragón haciendo actividades en los stands y entra al sorteo que hacemos cada día al cierre.</p>
+          <div class="cta">
+            <a class="btn btn--primary" href="#como">Cómo jugar</a>
+            <a class="btn" href="#participantes">Ver participantes</a>
+          </div>
+        </div>
+        <figure class="hero__carton">
+          <picture>
+            <source srcset="assets/img/carton.webp" type="image/webp">
+            <img src="assets/img/carton.jpg" alt="El cartón de Dragones de Cartón: mapa de pabellones, un dragón rojo y una cuadrícula de 16 casillas para sellos" width="1800" height="581">
+          </picture>
+        </figure>
+      </div>
+    </section>
+
+    <section id="como" class="section">
+      <div class="wrap">
+        <p class="eyebrow">Cómo jugar</p>
+        <h2>Tres pasos para despertar al dragón</h2>
+        <ol class="steps">
+          <li>
+            <h3>Pide tu cartón</h3>
+            <p>Te lo entregan en cualquier negocio participante. Es gratis y hay uno por persona.</p>
+          </li>
+          <li>
+            <h3>Gana sellos</h3>
+            <p>Haz la actividad de cada negocio y recibe su sello. Cada sello va en una casilla del color de su pabellón.</p>
+          </li>
+          <li>
+            <h3>Cumple objetivos</h3>
+            <p>Lleva tu cartón a <span data-dc="evento.lugarValidacion"></span>. Te entregan boletas para el sorteo del día.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="reglas" class="section section--alt">
+      <div class="wrap reglas">
+        <div>
+          <p class="eyebrow">Objetivos</p>
+          <h2 data-mecanica="nombre"></h2>
+          <p class="lede" data-mecanica="resumen"></p>
+          <ul class="objetivos" data-mecanica="objetivos"></ul>
+          <ul class="extras" data-mecanica="extras"></ul>
+        </div>
+        <div>
+          <div class="carton-grid" data-carton aria-label="Distribución de casillas del cartón por pabellón"></div>
+          <ul class="legend" data-legend></ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="participantes" class="section">
+      <div class="wrap">
+        <p class="eyebrow">Participantes</p>
+        <h2>Dónde ganar sellos</h2>
+        <p class="lede">Todos estos negocios entregan cartones y sellos.</p>
+        <ul class="participantes" data-participantes></ul>
+      </div>
+    </section>
+
+    <section id="sorteo" class="section section--alt">
+      <div class="wrap sorteo">
+        <div>
+          <p class="eyebrow">Sorteo diario</p>
+          <h2>Varios ganadores cada día</h2>
+          <p class="lede">Sorteamos todos los días a las <strong data-dc="evento.horaSorteo"></strong> en <strong data-dc="evento.lugarValidacion"></strong>. Publicamos la lista de ganadores en <strong data-dc="evento.cuentaRedes"></strong>.</p>
+        </div>
+        <dl class="faq" data-faq></dl>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__in">
+      <p>Dragones de Cartón es una actividad de los negocios participantes de <span data-dc="evento.feria"></span>.</p>
+      <a href="aliados.html">Guía para aliados</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

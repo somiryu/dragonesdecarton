@@ -1,0 +1,15 @@
+# Sitio estático: no hay build, Netlify publica la carpeta raíz tal cual.
+[build]
+  publish = "."
+  command = ""
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
